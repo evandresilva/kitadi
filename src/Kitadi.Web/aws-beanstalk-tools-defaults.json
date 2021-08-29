@@ -1,0 +1,20 @@
+
+{
+    "region" : "us-east-1",
+    "configuration" : "Debug",
+    "framework"     : "netcoreapp3.1",
+    "self-contained" : false,
+    "application"    : "KitadiWeb",
+    "environment"    : "KitadiWeb-prod",
+    "enable-xray"    : true,
+    "enhanced-health-type" : "enhanced",
+    "additional-options"   : "\"aws:autoscaling:launchconfiguration,SecurityGroups\"=\"sg-da6789cb\";\"aws:ec2:vpc,Subnets\"=\"subnet-0e8c9700\"",
+    "solution-stack"       : "64bit Amazon Linux 2 v2.2.4 running .NET Core",
+    "environment-type"     : "SingleInstance",
+    "cname"                : "kitadiweb-prod",
+    "instance-type"        : "t3a.medium",
+    "key-pair"             : "",
+    "instance-profile"     : "aws-elasticbeanstalk-ec2-role",
+    "service-role"         : "aws-elasticbeanstalk-service-role",
+    "proxy-server"         : "nginx"
+}
